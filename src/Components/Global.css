@@ -1,0 +1,323 @@
+:root {
+    --dark-light: #cacaca;
+    --border: #4a556562;
+    --text-desc: rgb(143, 143, 143);
+}
+
+/* bash */
+/* Terminal Container */
+.bash-terminal {
+    width: 100%;
+    max-width: 800px;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    border-color: var(--border);
+    overflow: hidden;
+  }
+  
+  /* Terminal Header with Close, Minimize, and Maximize Buttons */
+  .terminal-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    background-color: #0e0e0e;
+    border-bottom-color: var(--border);
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #ff3b3f; /* Red by default */
+  }
+  
+  .dot.green {
+    background-color: #47d147;
+  }
+  
+  .dot.yellow {
+    background-color: #f1e500;
+  }
+  
+  /* Terminal Command Styling */
+  .terminal-content {
+    white-space: pre-wrap; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words */
+    font-size: 16px;
+    background-color: #252525;
+  }
+  
+  .command {
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    font-weight: bold;
+    animation: typing 2s steps(30) 1s forwards; /* Typing effect */
+  }
+  
+  /* Simulate command output */
+  .output {
+    color: #66ff66;
+    font-weight: normal;
+    margin-top: 10px;
+    animation: typing 3s steps(40) 1s forwards;
+  }
+  
+  /* Typing Animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Delayed output text animation */
+  .output {
+    animation-delay: 3s;
+  }
+      
+/* bash */
+
+nav a,
+nav i {
+    color: var(--dark-light);
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0; /* Untuk menghindari indentasi tambahan */
+  }
+  
+
+@media (max-width: 1215px) {
+    br {
+        display: none;
+    }
+}
+
+.text-side {
+    color: var(--text-desc);
+  }
+  
+  .text-side btn:hover {
+    color: inherit; /* Menjaga warna teks tetap sesuai dari class Tailwind */
+  }
+  
+.line {
+    background: var(--border);
+}
+hr {
+    color: var(--border);
+}
+/* navabr */
+header {
+    border-color: var(--border);
+}
+
+/* navabr */
+
+/* hero */
+.blinking-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 255);
+    /* Warna ungu */
+    border-radius: 50%;
+    animation: blink 1.4s infinite ease-in-out;
+}
+
+/* Animasi berkedip */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.con h5 {
+    border-color: rgba(178, 0, 223, 0.74);
+}
+
+.hero-title h1 {
+    line-height: 80px;
+}
+
+.hero-title h1 span {
+    background: linear-gradient(175deg, white, rgb(143, 143, 143));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-title p {
+    color: var(--text-desc);
+}
+
+.hero-btn .btn-2 {
+    border-color: rgba(128, 128, 128, 0.836);
+}
+
+.hero-btn .btn-1 {
+    background: linear-gradient(140deg, rgb(255, 0, 255), rgb(0, 0, 255));
+}
+
+.overlay {
+    background: linear-gradient(to right, purple, darkblue);
+    filter: blur(300px);
+    width: 1800px;
+    height: 400px;
+    position: absolute;
+    top: -100px;
+    left: -850px;
+    right: 0;
+    z-index: -50;
+    border-radius: 200%;
+}
+
+@media (max-width: 1846px) {
+    .overlay {
+        width: 1500px;
+        left: -750px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .overlay {
+        width: 1000px;
+        left: -430px;
+    }
+}
+
+@media (max-width: 1048px) {
+    .overlay {
+        width: 800px;
+        left: -360px;
+    }
+}
+
+@media (max-width: 826px) {
+    .overlay {
+        width: 600px;
+        left: -230px;
+        top: -130px;
+    }
+}
+
+@media (max-width: 632px) {
+    .overlay {
+        width: 400px;
+        height: 300px;
+        left: -140px;
+        top: -90px;
+        filter: blur(190px);
+    }
+
+    .hero-title h1 {
+        line-height: normal;
+    }
+}
+
+@media (max-width: 392px) {
+    .overlay {
+        width: 200px;
+        height: 300px;
+        left: -40px;
+        top: -90px;
+    }
+}
+
+
+.overlay2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: -10;
+    background: linear-gradient(145deg, #2f3152, #1e1f30);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.03),
+        /* inner-glow tambahan */
+        inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    top: -20px;
+    right: -5px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.overlay2::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 40%,
+            rgba(255, 255, 255, 0.1) 50%,
+            rgba(255, 255, 255, 0) 60%);
+    transform: rotate(0deg);
+    animation: shine 4s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(25deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(25deg);
+    }
+}
+
+.hero-img {
+    max-width: 300px;
+}
+
+/* hero */
+
+
+
+
+/* media  query */
+
+@media screen and (max-width: 1332px) {
+    .container {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media (max-width: 444px) {
+    .hero-title p br {
+        display: none;
+    }
+}
+
+@media (max-width: 338px) {
+    .hero-title h1 br {
+        display: none;
+    }
+}
