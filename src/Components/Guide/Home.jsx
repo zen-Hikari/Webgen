@@ -222,8 +222,7 @@ function GuidePage() {
                   </div>
                   <div class="terminal-content py-5 px-5">
                     <pre class="command">
-                      <span className="text-blue-600">python</span> -m webgen
-                      --editable .
+                      <span className="text-blue-600">pnpm</span> add -g @novalhikari/webgen-cli
                     </pre>
                   </div>
                 </div>
@@ -243,7 +242,7 @@ function GuidePage() {
                   </div>
                   <div class="terminal-content py-5 px-5">
                     <pre class="command">
-                      <span className="text-blue-600">python</span> -m webgen
+                      <span className="text-blue-600">webgen</span>
                     </pre>
                   </div>
                 </div>
