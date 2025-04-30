@@ -1,6 +1,5 @@
 import "./Global.css";
 import Webgen from "./assets/webgen.png";
-import Webgen2 from "./assets/webgen-purple.png";
 function Hero() {
   return (
     <div className="flex justify-center py-40">
@@ -44,7 +43,7 @@ function Hero() {
             <div className="img-container flex justify-center">
             <div className="hero-img  flex justify-center relative">
               <div className="overlay"></div>
-              <img src={Webgen} alt="" width="130px" className="z-[-1]"/>
+              <img src={Webgen} alt="" width="140px" className="z-[-1]"/>
               <div className="overlay2"></div>
             </div>
             </div>

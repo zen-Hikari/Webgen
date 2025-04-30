@@ -250,8 +250,8 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     overflow: hidden;
-    top: -20px;
-    right: -5px;
+    top: -15px;
+    right: -3px;
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
