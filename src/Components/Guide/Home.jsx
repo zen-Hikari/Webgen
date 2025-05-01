@@ -140,76 +140,8 @@ function GuidePage() {
                 computer:
               </p>
 
-              <div className="terminal-1">
-                <h1 className="text-4xl font-bold">1. Clone the Repository:</h1>
-                <p className="text-[var(--dark-light)] py-8">
-                  Open your terminal and run the following command to clone the
-                  Webgen repository
-                </p>
-
-                <div class="bash-terminal border-1">
-                  <div class="terminal-header border-b-1 py-3 px-5">
-                    <span class="dot green"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot red"></span>
-                  </div>
-                  <div class="terminal-content py-5 px-5">
-                    <pre class="command">
-                      <span className="text-blue-600">git</span> clone
-                      https://github.com/zen-Hikari/Project-Web-Generator.git
-                    </pre>
-                  </div>
-                </div>
-              </div>
-
-              <div className="terminal-2 py-10">
-                <h1 className="text-4xl font-bold">
-                  2. Navigate to the project folder:
-                </h1>
-                <p className="text-[var(--dark-light)] py-8">
-                  Change your working directory to the tool folder:
-                </p>
-
-                <div class="bash-terminal border-1 ">
-                  <div class="terminal-header border-b-1 py-3 px-5">
-                    <span class="dot green"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot red"></span>
-                  </div>
-                  <div class="terminal-content py-5 px-5">
-                    <pre class="command">
-                      <span className="text-blue-600">cd</span>{" "}
-                      Project-Web-Generator
-                    </pre>
-                  </div>
-                </div>
-              </div>
-
-              <div className="terminal-3 py-10">
-                <h1 className="text-4xl font-bold">
-                  3. Install dependencies using:
-                </h1>
-                <p className="text-[var(--dark-light)] py-8">
-                  Install the required dependencies using pip:
-                </p>
-
-                <div class="bash-terminal border-1 ">
-                  <div class="terminal-header border-b-1 py-3 px-5">
-                    <span class="dot green"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot red"></span>
-                  </div>
-                  <div class="terminal-content py-5 px-5">
-                    <pre class="command">
-                      <span className="text-blue-600">pip</span> install -r
-                      requirements.txt
-                    </pre>
-                  </div>
-                </div>
-              </div>
-
               <div className="terminal-4 py-10">
-                <h1 className="text-4xl font-bold">4. Install Globally</h1>
+                <h1 className="text-4xl font-bold">1. Install Globally</h1>
                 <p className="text-[var(--dark-light)] py-8">
                   To use webgen as a globally executable command:
                 </p>
@@ -222,14 +154,15 @@ function GuidePage() {
                   </div>
                   <div class="terminal-content py-5 px-5">
                     <pre class="command">
-                      <span className="text-blue-600">pnpm</span> add -g @novalhikari/webgen-cli
+                      <span className="text-blue-600">pnpm</span> add -g
+                      @novalhikari/webgen-cli
                     </pre>
                   </div>
                 </div>
               </div>
 
               <div className="terminal-5 py-10">
-                <h1 className="text-4xl font-bold">5. Run the tool</h1>
+                <h1 className="text-4xl font-bold">2. Run the tool</h1>
                 <p className="text-[var(--dark-light)] py-8">
                   Now, you can execute the command from anywhere:
                 </p>
@@ -354,6 +287,12 @@ function GuidePage() {
                     <code>index.css</code>, <code>vite.config.js</code>, and{" "}
                     <code>package.json</code>
                   </li>
+                  <li className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:border before:border-gray-500">
+                    For <strong className="text-blue-500">Vue</strong>:{" "}
+                    <code>index.html</code>, <code>App.vue</code>,{" "}
+                    <code>style.css</code>, <code>main.js</code>,{" "}
+                    <code>vite.config.js</code>, and <code>package.json</code>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -450,7 +389,7 @@ function GuidePage() {
                 </div>
                 <div className="terminal-content py-5 px-5 bg-black text-white rounded-b-md">
                   <pre className="command">
-                    <span className="text-blue-400">python</span> -m webgen
+                    <span className="text-blue-400">webgen</span>
                   </pre>
                 </div>
               </div>
